@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Me Using UPI</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .qr-code {
+            margin-bottom: 20px;
+        }
+        .pay-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .pay-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pay Me Using UPI</h1>
+        <div class="qr-code">
+            <img src="img/qr.jpg" alt="UPI QR Code" style="width:300px;height:auto;">
+        </div>
+        <a href="upi://pay?pa=7076033011@ibl&pn=YourName&cu=INR" class="pay-button">Pay Using UPI</a>
+    </div>
+</body>
+</html>
