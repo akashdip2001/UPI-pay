@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pay Me Using UPI</title>
+    <title>Pay using UPI</title>
     <style>
         body {
             display: flex;
@@ -12,89 +12,55 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #1c1c1e;
-            color: #f8f9fa;
-            font-family: 'Poppins', sans-serif;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-family: 'Arial', sans-serif;
         }
         .container {
             text-align: center;
             padding: 20px;
-            animation: fadeIn 2s ease-in-out;
+            border: 1px solid #34495e;
+            border-radius: 10px;
+            background-color: #34495e;
+            max-width: 500px;
         }
         h1 {
-            font-size: 3rem;
-            color: #ffca28;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            animation: glow 1.5s infinite alternate;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f39c12;
         }
         .qr-code img {
-            width: 300px;
+            width: 250px;
             height: auto;
-            border: 5px solid #ffca28;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(255, 202, 40, 0.6);
-            transition: transform 0.3s;
-        }
-        .qr-code img:hover {
-            transform: scale(1.05);
+            border: 3px solid #f39c12;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
         .pay-button {
-            background-color: #ff5722;
+            background-color: #2980b9;
             color: white;
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 12px 25px;
+            font-size: 16px;
             border: none;
-            border-radius: 50px;
+            border-radius: 25px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin-top: 20px;
-            transition: background-color 0.3s, transform 0.3s;
-            animation: pulse 2s infinite;
+            transition: background-color 0.3s ease;
         }
         .pay-button:hover {
-            background-color: #ff7043;
-            transform: scale(1.1);
+            background-color: #3498db;
         }
         footer {
-            margin-top: 50px;
-            font-size: 1rem;
-            color: #b0bec5;
-        }
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes glow {
-            0% {
-                text-shadow: 0 0 10px #ffca28, 0 0 20px #ffca28, 0 0 30px #ffca28;
-            }
-            100% {
-                text-shadow: 0 0 20px #ffca28, 0 0 30px #ffca28, 0 0 40px #ffca28;
-            }
-        }
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.5);
-            }
-            70% {
-                box-shadow: 0 0 20px 30px rgba(255, 87, 34, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(255, 87, 34, 0);
-            }
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #bdc3c7;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Pay Me Using UPI</h1>
+        <h1>Pay Using UPI</h1>
         <div class="qr-code">
             <img src="img/qr.jpg" alt="UPI QR Code">
         </div>
